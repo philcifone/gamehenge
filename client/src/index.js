@@ -17,14 +17,14 @@ import {
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import { PersistGate } from "redux-persist/integration/react";
-import { curryGetDefaultMiddleware } from "@reduxjs/toolkit/dist/getDefaultMiddleware";
-import { getDefaultNormalizer } from "@testing-library/react";
+// import { getDefaultMiddleware } from "@reduxjs/toolkit/dist/getDefaultMiddleware";
+// import { getDefaultNormalizer } from "@testing-library/react";
 
 const persistConfig = { key: "root", storage, version: 1 };
 const persistedReducer = persistReducer(persistConfig, authReducer);
 const store = configureStore ({
   reducer: persistReducer,
-  middleware: (GetDefaultMiddleware) =>
+  middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializeableCheck: {
         ignoredActions: [ FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER ],
