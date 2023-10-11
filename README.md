@@ -2,8 +2,6 @@
 
 ## TO DO:
 
-- Move project to a Debian server for MongoDB. 
+- Continue with themeing ~2:10:00.
 
-- Install MongoDB.
-
-- Pickup from 1:38:35 from the video. You may need to resubmit the data from the last commit.
+- Github having issues with node/modules folder, need to ignore and remove from repo.
