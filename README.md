@@ -2,6 +2,6 @@
 
 ## TO DO:
 
-- Continue with themeing ~2:10:00.
+- Continue with navbar (desktop site) ~2:32:00.
 
-- Github having issues with node/modules folder, need to ignore and remove from repo due to large size.
+- login page still accessible!
