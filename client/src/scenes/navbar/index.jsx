@@ -25,7 +25,7 @@ import { setMode, setLogout } from "state";
 import { useNavigate } from "react-router-dom";
 import FlexBetween from "components/FlexBetween";
 
-const navbar = () => {
+const Navbar = () => {
     const [isMobileMenuToggled, setIsMobileMenuToggled] = useState(false);
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -86,9 +86,9 @@ const navbar = () => {
                         <Message sx={{ fontSize: "25px"}} />
                         <Notifications sx={{ fontSize: "25px"}} />
                         <Help sx={{ fontSize: "25px"}} />
-                        <FormControl variant="standard" value={fullname}>
+                        <FormControl variant="standard" value={fullName}>
                             <Select
-                                value={fullname}
+                                value={fullName}
                                 sx={{
                                     backgroundColor: neutralLight,
                                     width: "150px",
@@ -161,9 +161,9 @@ const navbar = () => {
                             <Message sx={{ fontSize: "25px"}} />
                             <Notifications sx={{ fontSize: "25px"}} />
                             <Help sx={{ fontSize: "25px"}} />
-                            <FormControl variant="standard" value={fullname}>
+                            <FormControl variant="standard" value={fullName}>
                                 <Select
-                                    value={fullname}
+                                    value={fullName}
                                     sx={{
                                         backgroundColor: neutralLight,
                                         width: "150px",
