@@ -1,4 +1,5 @@
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
+import Form from "./Form"
 
 const LoginPage = () => {
     const theme = useTheme();
@@ -28,8 +29,9 @@ const LoginPage = () => {
                 backgroundColor={theme.palette.background.alt}  
             >
                 <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem"}}>
-                    Welcome to GameHenge! You've Come to the Land of the Lizards!
+                    Welcome to GameHenge! You've Come to the Land of Lizards!
                 </Typography>
+                <Form />
             </Box>
         </Box>
     );
