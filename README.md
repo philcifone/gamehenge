@@ -2,6 +2,6 @@
 
 ## TO DO:
 
-- Continue with navbar (desktop site) ~2:32:00.
+- Continue with loginPage/Form/130 ~3:11:00.
 
 - login page still accessible!
