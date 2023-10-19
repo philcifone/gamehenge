@@ -19,7 +19,6 @@ import Post from "./models/Post.js";
 import { users, posts } from "./data/index.js";
 
 /* CONFIGURATIONS */
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 dotenv.config();
@@ -34,7 +33,6 @@ app.use(cors());
 app.use("/assets", express.static(path.join(__dirname, 'public/assets')));
 
 /* FILE STORAGE */
-
 const storage = multer.diskStorage({
  destination: function (req, file, cb) {
   cb(null, "public/assets");
@@ -55,14 +53,14 @@ app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
 
 /* MONGOOSE SETUP */
-
 const PORT = process.env.PORT || 6001;
-mongoose.connect(process.env.MONGO_URL, {
- useNewUrlParser: true,
- useUnifiedTopology: true,
- })
- .then(() => {
-  app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
+mongoose
+  .connect(process.env.MONGO_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
+  .then(() => {
+    app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
    /* ADD TEST DATA ONE TIME */
    // User.insertMany(users);
